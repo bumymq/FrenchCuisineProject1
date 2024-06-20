@@ -1,0 +1,3 @@
+﻿  mainfrenchcuisine.cpp
+C:\Users\tihom\source\repos\FrenchCuisine\FrenchCuisine\mainfrenchcuisine.cpp(22,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  FrenchCuisine.vcxproj -> C:\Users\tihom\source\repos\FrenchCuisine\x64\Debug\FrenchCuisine.exe
