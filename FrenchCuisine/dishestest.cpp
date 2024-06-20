@@ -2,10 +2,12 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
+
 using namespace std;
-void testType(Dish* dish) {
+
+void testName(Dish* dish) {
     this_thread::sleep_for(chrono::milliseconds(100));
-    std::cout << dish->Type() << " it is ";
+    std::cout << dish->Name() << " it is ";
 }
 
 void testDiscription(Dish* dish) {
@@ -13,7 +15,7 @@ void testDiscription(Dish* dish) {
 }
 
 void testGetparam(Dish* dish) {
-    std::cout << "Parameters of " << dish->Type() << " is:\n";
+    std::cout << "Parameters of " << dish->Name() << " is:\n";
     this_thread::sleep_for(chrono::milliseconds(100));
     std::cout << "Weight: " << dish->GetWeight() << " grams" << std::endl;
     this_thread::sleep_for(chrono::milliseconds(100));
@@ -24,13 +26,25 @@ void testGetparam(Dish* dish) {
     std::cout << "Cooking Time: " << dish->GetCookingTime() << " minutes" << std::endl;
 }
 
+void testServingSuggestion(Dish* dish) {
+   
+        std::cout << "Serving suggestion: " << dish->ServingSuggestion() << std::endl;
+    
+}
+
+void testHowToEat(Dish* dish) {
+    std::cout << "How to eat " << dish->Name() << ":" << std::endl;
+    std::cout << dish->HowToEat() << std::endl;
+}
 void testDishes(Dish* dish) {
-    testType(dish);
+    testName(dish);
     testDiscription(dish);
     this_thread::sleep_for(chrono::milliseconds(100));
     std::cout << std::endl;
     this_thread::sleep_for(chrono::milliseconds(100));
     testGetparam(dish);
     this_thread::sleep_for(chrono::milliseconds(100));
-    std::cout << std::endl;
+    testServingSuggestion(dish);  
+    this_thread::sleep_for(chrono::milliseconds(100));
+    testHowToEat(dish);
 }

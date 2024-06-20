@@ -1,3 +1,13 @@
-﻿  mainfrenchcuisine.cpp
-C:\Users\tihom\source\repos\FrenchCuisine\FrenchCuisine\mainfrenchcuisine.cpp(22,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  FrenchCuisine.vcxproj -> C:\Users\tihom\source\repos\FrenchCuisine\x64\Debug\FrenchCuisine.exe
+﻿  Bouillabaisse.cpp
+  client.cpp
+  clienttest.cpp
+  Croissant.cpp
+  Dish.cpp
+  dishestest.cpp
+  mainfrenchcuisine.cpp
+C:\Users\tihom\Desktop\project\FrenchCuisine\mainfrenchcuisine.cpp(22,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Ratatouille.cpp
+  Souffle.cpp
+  Steak tartare.cpp
+  Создание кода...
+  FrenchCuisine.vcxproj -> C:\Users\tihom\Desktop\project\x64\Debug\FrenchCuisine.exe

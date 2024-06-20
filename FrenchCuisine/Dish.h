@@ -13,9 +13,11 @@ protected:
 	explicit Dish(double _weight, double _price, double _calories, double _cookingTime);
 
 public:
-	virtual std::string Type() = 0;
+	virtual ~Dish() {}
+	virtual std::string Name() = 0;
 	virtual std::string Discription() = 0;
-
+	virtual std::string ServingSuggestion() = 0;
+	virtual std::string HowToEat() = 0;
 	double GetWeight() const;
 	double GetPrice() const;
 	double GetCalories() const;

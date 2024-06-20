@@ -12,7 +12,7 @@ void Testname(Client* x) {
 }
 
 void testbuy(Client* x, Dish* y) {
-    cout << "- Hi, I'd like to buy " << y->Type() << ". How much will it cost?" << endl;
+    cout << "- Hi, I'd like to buy " << y->Name() << ". How much will it cost?" << endl;
     this_thread::sleep_for(chrono::milliseconds(100));
     cout << "- Sure, it'll cost you " << y->GetPrice() <<" euro "<<"Card or cash ? " << endl;
     this_thread::sleep_for(chrono::milliseconds(100));
